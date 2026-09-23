@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #f4f7fb;
+}
+
+/* ========================= NAVBAR ========================= */
+header {
+    background: #06154d;
+    color: white;
+    padding: 20px 6%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 25px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #5ddcff;
+}
+
+/* ========================= HERO ========================= */
+.hero {
+    min-height: 650px;
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    background: linear-gradient(120deg, #06154d, #075da5, #48c6ef);
+    color: white;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.subtitulo {
+    color: #8be7ff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: 85px;
+    line-height: 0.95;
+    margin-bottom: 30px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 28px;
+    background: white;
+    color: #06154d;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    transform: translateY(-4px);
+    background: #8be7ff;
+}
+
+/* Círculo con el número 10 */
+.hero-image {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, white, #8be7ff);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.hero-image span {
+    font-size: 170px;
+    font-weight: bold;
+    color: #06154d;
+}
+
+/* ========================= DATOS ========================= */
+.datos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: white;
+    padding: 35px 10%;
+}
+
+.dato {
+    text-align: center;
+    padding: 10px;
+}
+
+.dato span {
+    display: block;
+    font-size: 35px;
+    font-weight: bold;
+    color: #0875bd;
+}
+
+.dato p {
+    color: #555;
+    margin-top: 5px;
+}
+
+/* ========================= SECCIONES ========================= */
+.seccion {
+    padding: 90px 10%;
+}
+
+.seccion h2 {
+    text-align: center;
+    font-size: 42px;
+    color: #06154d;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    text-align: center;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+}
+
+/* ========================= BIOGRAFÍA ========================= */
+.biografia {
+    max-width: 1000px;
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.biografia div {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.biografia h3 {
+    color: #0875bd;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.biografia p {
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* ========================= TRAYECTORIA ========================= */
+.azul {
+    background: #06154d;
+}
+
+.azul h2 {
+    color: white;
+}
+
+.timeline {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.timeline-item {
+    background: white;
+    margin: 20px 0;
+    padding: 25px 30px;
+    border-radius: 12px;
+    border-left: 6px solid #22b8f0;
+}
+
+.timeline-item span {
+    color: #0875bd;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.timeline-item h3 {
+    margin: 8px 0;
+    color: #06154d;
+    font-size: 24px;
+}
+
+.timeline-item p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ========================= TROFEOS ========================= */
+.trofeos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.trofeos article {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.trofeos article:hover {
+    transform: translateY(-8px);
+}
+
+.trofeo {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.trofeos h3 {
+    color: #06154d;
+    margin-bottom: 10px;
+}
+
+.trofeos strong {
+    display: block;
+    color: #0875bd;
+    font-size: 40px;
+}
+
+.trofeos p {
+    color: #777;
+}
+
+/* ========================= PREMIOS ========================= */
+.premios {
+    background: #e8f7ff;
+}
+
+.premios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.premio {
+    background: white;
+    padding: 35px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.premio span {
+    font-size: 55px;
+    font-weight: bold;
+    color: #0875bd;
+}
+
+.premio h3 {
+    color: #06154d;
+    margin: 10px 0;
+}
+
+.premio p {
+    color: #666;
+}
+
+/* ========================= RÉCORDS ========================= */
+.records {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.record {
+    padding: 35px 20px;
+    background: white;
+    text-align: center;
+    border-radius: 15px;
+    border-top: 5px solid #0875bd;
+}
+
+.record span {
+    font-size: 55px;
+    font-weight: bold;
+    color: #0875bd;
+}
+
+.record h3 {
+    margin: 10px 0;
+    color: #06154d;
+}
+
+.record p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* ========================= ARGENTINA ========================= */
+.argentina {
+    padding: 90px 10%;
+    background: linear-gradient(135deg, #73d7f5, white, #73d7f5);
+}
+
+.argentina>div {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.argentina h2 {
+    font-size: 45px;
+    color: #06154d;
+    margin-bottom: 20px;
+}
+
+.argentina>div>p {
+    max-width: 650px;
+    line-height: 1.7;
+    color: #444;
+}
+
+.seleccion-titulos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.seleccion-titulos div {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.seleccion-titulos strong {
+    font-size: 25px;
+    color: #0875bd;
+}
+
+/* ========================= FRASE ========================= */
+.frase {
+    padding: 90px 10%;
+    text-align: center;
+    background: #06154d;
+    color: white;
+}
+
+.frase blockquote {
+    font-size: 32px;
+    font-style: italic;
+    max-width: 800px;
+    margin: auto;
+}
+
+.frase p {
+    margin-top: 20px;
+    color: #8be7ff;
+}
+
+/* ========================= FOOTER ========================= */
+footer {
+    background: #030c2e;
+    color: white;
+    text-align: center;
+    padding: 50px 10%;
+}
+
+footer h2 {
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #bbb;
+}
+
+.copyright {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* ========================= RESPONSIVE ========================= */
+@media (max-width: 900px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 60px;
+    }
+
+    .datos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .trofeos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .premios-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .records {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 60px 6%;
+    }
+
+    .hero h2 {
+        font-size: 50px;
+    }
+
+    .hero-image {
+        width: 230px;
+        height: 230px;
+    }
+
+    .hero-image span {
+        font-size: 110px;
+    }
+
+    .biografia {
+        grid-template-columns: 1fr;
+    }
+
+    .trofeos,
+    .premios-grid,
+    .records,
+    .seleccion-titulos {
+        grid-template-columns: 1fr;
+    }
+
+    .datos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .seccion {
+        padding: 60px 6%;
+    }
+
+    .seccion h2 {
+        font-size: 32px;
+    }
+
+    .argentina h2 {
+        font-size: 35px;
+    }
+
+    .frase blockquote {
+        font-size: 24px;
+    }
+}
